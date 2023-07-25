@@ -11,7 +11,7 @@ jobs:
    steps:
      - name: run models
        command: dbt run -m my_first_dbt_model 
-       command: dbt test  -m my_first_dbt_model.sql 
+       command: dbt test  -m my_second_dbt_model
 
  - name: nightly
    schedule: 0 0 * * * # This example will run every day at midnight.
